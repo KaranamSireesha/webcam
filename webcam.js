@@ -1,4 +1,5 @@
 const video= document.getElementById("video");
+const canvas= document.getElementById("canvas");
 const snap= document.getElementById("snap");
 const errorMsgElement= document.getElementById("span#ErrorMsg");
 
@@ -24,3 +25,9 @@ function handleSuccess(stream){
 }
 
 init();
+
+
+var context = canvas.getContext("2d");
+snap.addEventListener("click",function(){
+    context.drawImage(video, 0, 0, 280, 200);
+});
