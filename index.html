@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcam permissins</title>
+    <title>Webcam permissions</title>
     <link rel="stylesheet" href="webcam.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,19 +18,17 @@
 
 <body>
     <div class="main-container container">
-        <div class="head-container d-flex ">
-            <div class="item-1">
-                <div class="box1"></div>
+        <div class="head-container d-flex">
+            <div class="item-1 mb-3">
                 <div class="test">Webcam Test</div>
             </div>
-            <div class="item-2">
-                <div class="box2"></div>
+            <div class="item-2 mb-3">
                 <div class="test1">Audio test</div>
             </div>
         </div>
-        <div class="head-container1">
-            <h4 class="text-danger mt-3 ps-5">Instructions :</h4>
-            <ul class="points">
+        <div class="head-container1 d-flex flex-column ">
+            <h4 class="text-danger ms-3 mt-5">Instructions :</h4>
+            <ul class="points ms-5">
                 <li>Please allow webcam permission to this link to check your web cam is properly working or not.</li>
                 <li>please click on the <strong>"capture photo"</strong> button to see the captured photo. If your
                     captured photo is neat and clear,<br>please click on the <strong>"continue to Audio
@@ -38,22 +36,22 @@
                 <li>If youe web cam is not seen please refresh the page.</li>
             </ul>
         </div>
-        <div class="web-container  d-flex justify-content-center">
-            <div clas="me-5">
-                <h5 class="heading text-success text-center">Live Web Cam</h5>
-                <div class="cam-space">
+        <div class="web-container d-flex flex-row justify-content-center">
+            <div class="me-5">
+                <h5 class="heading text-success ms-5 mt-5">Live Web Cam</h5>
+                <div class="cam-space mt-3">
                     <div class="video-wrap">
                         <video id="video" playsinline autoplay="true"></video>
                     </div>
                 </div>
-                <button type="button" class="btn btn1 btn-success" id="snap">Capture photo</button>
+                <button type="button" class="btn btn-success" id="snap">Capture photo</button>
             </div>
             <div class="photo-container ">
-                <h5 class="heading text-success text-center">Captured photo</h5>
-                <div class="cam-space">
+                <h5 class="heading1 text-success text-center mt-4">Captured photo</h5>
+                <div class="cam-space mt-3">
                     <canvas id="canvas"></canvas>
                 </div>
-                <button type="button" class="btn btn-success ">Continue to Audio test</button>
+                <button type="button" class="btn btn1 btn-success ">Continue to Audio test</button>
             </div>
         </div>
     </div>

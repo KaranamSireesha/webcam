@@ -5,7 +5,7 @@ const errorMsgElement= document.getElementById("span#ErrorMsg");
 
 const constrains = {
     video:{
-        width:280, height: 200
+        width:280, height: 150
     }
 };
 
@@ -29,5 +29,5 @@ init();
 
 var context = canvas.getContext("2d");
 snap.addEventListener("click",function(){
-    context.drawImage(video, 0, 0, 280, 200);
+    context.drawImage(video, 0, 0, 300, 150);
 });
